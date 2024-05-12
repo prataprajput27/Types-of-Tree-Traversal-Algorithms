@@ -2,20 +2,16 @@
   margin-bottom: 20px;
 }
 
-.enter-val {
-  padding-left: 35%;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 input {
   padding: 15px;
-  margin-right: 15px;
   border-color: #000;
   width: 25%;
   text-align: center;
+  margin: 0 5px;
 }
 
 .submit {
@@ -33,6 +29,31 @@ input {
 .submit:hover {
   background-color: #333;
   color: white;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input, .submit {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+@media (min-width: 600px) {
+  input, .submit {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  input, .submit {
+    width: auto;
+  }
 }
 
 .traversal-results {
@@ -153,4 +174,9 @@ p {
   font-family: "Tinos", serif;
   line-height: 30px;
   color: #292929;
+}
+
+.img-div img {
+  width: 100%;
+  height: auto;
 }
